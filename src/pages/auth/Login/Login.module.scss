@@ -1,0 +1,38 @@
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 220px;
+  padding-left: 100px;
+  gap: 60px;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainText {
+  font-size: 40px;
+  font-weight: 700;
+  color: #213f7d;
+}
+
+.subText {
+  font-size: 20px;
+  font-weight: 400;
+  color: #545f7d;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.forgotPasswordText {
+  font-size: 12px;
+  font-weight: 600;
+  color: #39cdcc;
+  cursor: pointer;
+}

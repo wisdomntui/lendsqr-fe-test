@@ -1,0 +1,9 @@
+.wrapper {
+  text-align: center;
+  cursor: pointer;
+
+  & > p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,30 @@
+.authWrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+  width: 50%;
+  background: snow;
+  padding-top: 106px;
+  padding-left: 67px;
+}
+
+.rightContainer {
+  width: 50%;
+  background-color: #ffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  & > h1 {
+    line-height: unset;
+    color: #213f7d;
+  }
+}
