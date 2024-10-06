@@ -1,0 +1,120 @@
+.layoutWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbfb;
+  height: 100vh;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: row;
+}
+
+/*  HEADER STYLES */
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px;
+  background-color: #ffff;
+  box-shadow: 3px 0px 20px 0px #0000000a;
+
+  @media (max-width: 1006px) {
+    flex-direction: column;
+  }
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 168px;
+  width: 100%;
+
+  @media (max-width: 1006px) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 540px) {
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 15px;
+  }
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  justify-content: end;
+
+  @media (max-width: 1006px) {
+    margin-left: auto;
+  }
+
+  @media (max-width: 540px) {
+    justify-content: space-between;
+    gap: 0px;
+  }
+}
+
+.headerLogo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  & > h1 {
+    color: #213f7d;
+    line-height: 0px;
+  }
+}
+
+.headerNotification {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  gap: 47px;
+
+  & > p {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #213f7d;
+  }
+
+  @media (max-width: 1006px) {
+    margin-right: 25px;
+  }
+}
+
+.headerProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @media (max-width: 540px) {
+    justify-content: space-between;
+  }
+}
+
+.profileDropdown {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  & > p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #213f7d;
+  }
+}
+
+// SIDEBAR STYLES
+
+.sidebarWrapper {
+  padding: 30px 39px;
+}
