@@ -1,10 +1,10 @@
 import styles from './Layout.module.scss';
 import logo from '../../../assets/images/logo.png';
 import Input from '../../../components/Input/Input';
-import bell from '../../../assets/icons/bell.svg';
 import Avatar from '../../../components/Avatar/Avatar';
 import imageAvatar from '../../../assets/images/image-avatar.png';
 import caretDown from '../../../assets/icons/caret-down.svg';
+import Icon from '../../../components/Icon/Icon';
 
 const Header = () => {
   return (
@@ -27,13 +27,13 @@ const Header = () => {
       <div className={styles.rightSection}>
         <div className={styles.headerNotification}>
           <p>Docs</p>
-          <img src={bell} alt="" width={26} height={26} />{' '}
+          <Icon name="bell" />
         </div>
         <div className={styles.headerProfile}>
           <Avatar src={imageAvatar} size="48px" radius="100%" />
           <div className={styles.profileDropdown}>
             <p>Adedeji</p>
-            <img src={caretDown} alt="" width={7} height={4} />{' '}
+            <Icon name="caretDown" />
           </div>
         </div>
       </div>

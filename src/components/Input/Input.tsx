@@ -1,6 +1,7 @@
 import {useRef, useState} from 'react';
 import styles from './Input.module.scss';
 import search from '../../assets/icons/search.svg';
+import Icon from '../Icon/Icon';
 
 interface InputProps {
   height?: string;
@@ -56,7 +57,7 @@ const Input = ({
 
       {type !== 'password' && searchable && (
         <div className={styles.afterContentSearch}>
-          <img src={search} alt="App Logo" width={14} height={14} />{' '}
+          <Icon name="search" width={14} height={14} />
         </div>
       )}
     </div>
