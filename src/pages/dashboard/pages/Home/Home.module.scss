@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: 500;
+  color: #213f7d;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}

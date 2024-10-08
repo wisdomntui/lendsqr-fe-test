@@ -1,0 +1,39 @@
+.container {
+  background-color: #ffff;
+  padding: 30px;
+
+  & > table {
+    width: 100%;
+
+    & > thead {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      color: #545f7d;
+      text-transform: uppercase;
+    }
+
+    & > tbody {
+      font-size: 14px;
+      font-weight: 400;
+      color: #545f7d;
+
+      & > tr > td {
+        padding: 21px 0px 23px 0px;
+        border-bottom: 1px solid #213f7d1a;
+      }
+    }
+  }
+}
+
+.headerContent {
+  display: flex;
+  gap: 10px;
+
+  & > svg {
+    cursor: pointer;
+  }
+}

@@ -29,9 +29,9 @@ const Sidebar = () => {
       </div>
 
       <div className={styles.bottomNav}>
-        {navItems.map((val: any) => {
+        {navItems.map((val: any, key: any) => {
           return (
-            <div className={styles.bottomNavContent}>
+            <div className={styles.bottomNavContent} key={key}>
               <p>{toUpper(val.title)}</p>
 
               <div>
@@ -43,6 +43,7 @@ const Sidebar = () => {
                         background: key === active ? '#ebfafa' : '',
                       }}
                       onClick={() => setActive(key)}
+                      key={key}
                     >
                       <Icon name={item.icon} />
                       <p>{startCase(item.text)}</p>

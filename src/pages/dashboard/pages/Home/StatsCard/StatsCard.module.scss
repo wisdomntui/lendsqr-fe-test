@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #ffff;
+  box-shadow: 3px 5px 20px 0px #0000000a;
+  height: 160px;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.icon {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #545f7d;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #213f7d;
+}

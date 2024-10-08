@@ -3,10 +3,14 @@ import logo from '../../../assets/images/logo.png';
 import Input from '../../../components/Input/Input';
 import Avatar from '../../../components/Avatar/Avatar';
 import imageAvatar from '../../../assets/images/image-avatar.png';
-import caretDown from '../../../assets/icons/caret-down.svg';
 import Icon from '../../../components/Icon/Icon';
 
-const Header = () => {
+interface HeaderProps {
+  showMenu: boolean;
+  setShowMenu: any;
+}
+
+const Header = ({showMenu, setShowMenu}: HeaderProps) => {
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.leftSection}>
@@ -25,6 +29,12 @@ const Header = () => {
       </div>
 
       <div className={styles.rightSection}>
+        <div
+          className={styles.menuButton}
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <Icon name="menu" />
+        </div>
         <div className={styles.headerNotification}>
           <p>Docs</p>
           <Icon name="bell" />
