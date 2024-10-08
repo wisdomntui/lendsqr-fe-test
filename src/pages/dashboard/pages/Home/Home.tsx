@@ -1,5 +1,6 @@
 import styles from './Home.module.scss';
 import StatsCard from './StatsCard/StatsCard';
+import Paginator from './Table/Paginator';
 import Table from './Table/Table';
 
 const Home = () => {
@@ -30,6 +31,8 @@ const Home = () => {
       </div>
 
       <Table />
+
+      <Paginator />
     </div>
   );
 };

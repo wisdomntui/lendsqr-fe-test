@@ -1,0 +1,10 @@
+.wrapper {
+  border-radius: 100px;
+  text-align: center;
+  padding: 1px 10px;
+  width: fit-content;
+
+  & > p {
+    line-height: 0px;
+  }
+}

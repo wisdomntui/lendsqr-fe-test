@@ -13,3 +13,5 @@ export {Storage} from './Storage.svg';
 export {Menu} from './Menu.svg';
 export {Filter} from './Filter.svg';
 export {ThreeDots} from './ThreeDots.svg';
+export {CaretLeftSlim} from './CaretLeftSlim.svg';
+export {CaretRightSlim} from './CaretRightSlim.svg';

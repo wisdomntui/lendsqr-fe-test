@@ -1,4 +1,5 @@
 import Icon from '../../../../../components/Icon/Icon';
+import Tag from '../../../../../components/Tag/Tag';
 import styles from './Table.module.scss';
 
 const Table = () => {
@@ -53,7 +54,9 @@ const Table = () => {
             <td>adedeji@lendsqr.com</td>
             <td>08078903721</td>
             <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
+            <td>
+              <Tag text="blacklisted" color="#E4033B" bg="#ffe5ec" />
+            </td>
             <td>
               <Icon name="threeDots" />
             </td>
