@@ -5,6 +5,7 @@ export const navItems: Array<Object> = [
       {
         text: 'users',
         icon: 'userFriends',
+        url: '/',
       },
       {
         text: 'guarantors',

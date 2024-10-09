@@ -3,9 +3,18 @@ import Icon from '../../../components/Icon/Icon';
 import styles from './Layout.module.scss';
 import {navItems} from './navitems';
 import {toUpper, startCase} from 'lodash';
+import {useNavigate} from 'react-router-dom';
 
 const Sidebar = () => {
   const [active, setActive] = useState('dashboard');
+
+  const navigate = useNavigate();
+
+  const handleNavClick = (item: any, key: any) => {
+    setActive(key);
+
+    navigate(item.url);
+  };
 
   return (
     <div className={styles.sidebarWrapper}>
@@ -42,7 +51,7 @@ const Sidebar = () => {
                         borderLeft: key === active ? '3px solid #39cdcc' : '',
                         background: key === active ? '#ebfafa' : '',
                       }}
-                      onClick={() => setActive(key)}
+                      onClick={() => handleNavClick(item, key)}
                       key={key}
                     >
                       <Icon name={item.icon} />

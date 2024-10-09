@@ -9,13 +9,14 @@ interface IconProps {
 
 const Icon = ({name, width, height}: IconProps) => {
   const iconName = upperFirst(name);
-  const IconComponent = C[iconName];
 
-  if (iconName in C) {
+  const IconComponent = C[iconName as keyof typeof C];
+
+  if (IconComponent) {
     return <IconComponent width={width} height={height} />;
   }
 
-  return <></>;
+  return null;
 };
 
 export default Icon;

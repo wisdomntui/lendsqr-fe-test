@@ -14,7 +14,7 @@ type RouteParams = {
 const UserDetails = () => {
   const {id} = useParams<RouteParams>();
 
-  const {isLoading, data} = useUserQuery(id);
+  const {data} = useUserQuery(id);
   const [userData, setUserData] = useState([]);
 
   useEffect(() => {

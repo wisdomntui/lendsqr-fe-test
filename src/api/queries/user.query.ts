@@ -6,5 +6,5 @@ export const useUsersQuery = () =>
   useQuery({queryKey: ['users'], queryFn: () => request('/users', 'get', {})});
 
 // User Query
-export const useUserQuery = (id:string) =>
+export const useUserQuery = (id:string|undefined) =>
     useQuery({queryKey: ['user'], queryFn: () => request(`/users/${id}`, 'get', {})});

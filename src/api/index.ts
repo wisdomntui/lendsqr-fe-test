@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig, Method } from 'axios';
+import axios, { AxiosRequestConfig} from 'axios';
 
 const apiUrl: string = import.meta.env.VITE_API_URL;
 
@@ -18,7 +18,7 @@ const reqConfig: AxiosRequestConfig = {
  */
 export const request = async (
   path: string,
-  method: Method,
+  method: 'get' | 'post' | 'delete' | 'put',
   data: object = {},
   params: object = {},
   headers: object = {}
@@ -37,8 +37,10 @@ export const request = async (
       return response.data;
     }
   } catch (err: any) {
+    // eslint-disable-next-line no-throw-literal
     throw {
       ...err.response.data,
+      unauthenticated: err.response.status === 401,
     };
   }
 };
