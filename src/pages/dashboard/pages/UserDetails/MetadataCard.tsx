@@ -1,17 +1,32 @@
+import Avatar from '../../../../components/Avatar/Avatar';
 import Icon from '../../../../components/Icon/Icon';
 import styles from './UserDetails.module.scss';
 
-const MetadataCard = () => {
+interface MetadataCardProps {
+  userData: any;
+}
+
+const MetadataCard = ({userData}: MetadataCardProps) => {
   return (
     <div className={styles.metaWrapper}>
       <div className={styles.topSection}>
         <div className={styles.avatarSection}>
           <div className={styles.avatar}>
-            <Icon name="user" />
+            {userData?.profile?.avatar?.length > 0 ? (
+              <Avatar
+                src={userData?.profile?.avatar}
+                size="48px"
+                radius="100%"
+              />
+            ) : (
+              <Icon name="user" />
+            )}
           </div>
           <div className={styles.nameSection}>
-            <p>Grace Effiom</p>
-            <p>LSQFf587g90</p>
+            <p>
+              {userData?.profile?.firstName} {userData?.profile?.lastName}
+            </p>
+            <p>{userData?.accountNumber}</p>
           </div>
         </div>
         <div className={styles.tierSection}>
@@ -23,8 +38,8 @@ const MetadataCard = () => {
           </div>
         </div>
         <div className={styles.balanceSection}>
-          <p>₦200,000.00</p>
-          <p>9912345678/Providus Bank</p>
+          <p>₦{userData?.accountBalance}</p>
+          <p>{userData?.profile?.bvn}/Providus Bank</p>
         </div>
       </div>
       <div className={styles.bottomSection}>

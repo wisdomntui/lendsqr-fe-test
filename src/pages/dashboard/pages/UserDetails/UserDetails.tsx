@@ -1,11 +1,28 @@
-import {Link} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 import Button from '../../../../components/Button/Button';
 import Icon from '../../../../components/Icon/Icon';
 import styles from './UserDetails.module.scss';
 import MetadataCard from './MetadataCard';
 import MainCard from './MainCard';
+import {useUserQuery} from '../../../../api/queries/user.query';
+import {useEffect, useState} from 'react';
+
+type RouteParams = {
+  id: string; // Define the expected URL parameters and their types
+};
 
 const UserDetails = () => {
+  const {id} = useParams<RouteParams>();
+
+  const {isLoading, data} = useUserQuery(id);
+  const [userData, setUserData] = useState([]);
+
+  useEffect(() => {
+    if (data) {
+      setUserData(data);
+    }
+  }, [data]);
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>
@@ -38,9 +55,9 @@ const UserDetails = () => {
         </div>
       </div>
 
-      <MetadataCard />
+      <MetadataCard userData={userData} />
 
-      <MainCard />
+      <MainCard userData={userData} />
     </div>
   );
 };

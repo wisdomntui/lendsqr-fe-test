@@ -4,3 +4,7 @@ import {request} from '..';
 // Users Query
 export const useUsersQuery = () =>
   useQuery({queryKey: ['users'], queryFn: () => request('/users', 'get', {})});
+
+// User Query
+export const useUserQuery = (id:string) =>
+    useQuery({queryKey: ['user'], queryFn: () => request(`/users/${id}`, 'get', {})});
