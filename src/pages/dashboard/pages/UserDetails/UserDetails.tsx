@@ -3,6 +3,7 @@ import Button from '../../../../components/Button/Button';
 import Icon from '../../../../components/Icon/Icon';
 import styles from './UserDetails.module.scss';
 import MetadataCard from './MetadataCard';
+import MainCard from './MainCard';
 
 const UserDetails = () => {
   return (
@@ -39,9 +40,7 @@ const UserDetails = () => {
 
       <MetadataCard />
 
-      {/*<Table isLoading={isLoading} data={userData} />
-
-      <Paginator /> */}
+      <MainCard />
     </div>
   );
 };

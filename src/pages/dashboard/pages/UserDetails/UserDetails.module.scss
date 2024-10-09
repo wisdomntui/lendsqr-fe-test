@@ -53,7 +53,7 @@
 .metaWrapper {
   display: flex;
   flex-direction: column;
-  gap: 51px;
+  gap: 30px;
   background-color: #ffff;
   box-shadow: 3px 5px 20px 0px #0000000a;
   padding: 30px 30px 0px 30px;
@@ -61,6 +61,7 @@
 
 .topSection {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -137,5 +138,128 @@
     font-weight: 400;
     line-height: 0px;
     color: #213f7d;
+  }
+}
+
+.bottomSection {
+  display: flex;
+  gap: 80px;
+  text-wrap: nowrap;
+
+  @media (max-width: 1006px) {
+    overflow: auto;
+  }
+
+  @media (max-width: 540px) {
+    overflow: auto;
+  }
+
+  & > div {
+    line-height: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 25px 10px;
+  }
+
+  & > div:first-of-type {
+    color: #39cdcc;
+    border-bottom: 2px solid #39cdcc;
+  }
+}
+
+// MAIN CARD STYLE
+.mainCardWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  box-shadow: 3px 5px 20px 0px #0000000a;
+  padding: 30px 30px 0px 30px;
+  height: calc(100vh - 585px);
+  overflow: auto;
+}
+
+.gridFit {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #213f7d1a;
+
+  & > div:first-of-type {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0px;
+    color: #213f7d;
+  }
+
+  & > div:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 10px;
+    row-gap: 20px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & > p:first-of-type {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 0px;
+        color: #545f7d;
+      }
+
+      & > p:last-of-type {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 0px;
+        color: #545f7d;
+      }
+    }
+  }
+}
+
+.gridFill {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #213f7d1a;
+
+  & > div:first-of-type {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0px;
+    color: #213f7d;
+  }
+
+  & > div:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    column-gap: 10px;
+    row-gap: 20px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & > p:first-of-type {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 0px;
+        color: #545f7d;
+      }
+
+      & > p:last-of-type {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 0px;
+        color: #545f7d;
+      }
+    }
   }
 }

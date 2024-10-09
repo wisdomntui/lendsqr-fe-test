@@ -27,7 +27,14 @@ const MetadataCard = () => {
           <p>9912345678/Providus Bank</p>
         </div>
       </div>
-      <div className={styles.bottomSection}></div>
+      <div className={styles.bottomSection}>
+        <div>General Details</div>
+        <div>Documents</div>
+        <div>Bank Details</div>
+        <div>Loans</div>
+        <div>Savings</div>
+        <div>App and System</div>
+      </div>
     </div>
   );
 };
