@@ -16,3 +16,6 @@ export {ThreeDots} from './ThreeDots.svg';
 export {CaretLeftSlim} from './CaretLeftSlim.svg';
 export {CaretRightSlim} from './CaretRightSlim.svg';
 export {ArrowLeft} from './ArrowLeft.svg';
+export {User} from './User.svg';
+export {FilledStar} from './FilledStar.svg';
+export {Star} from './Star.svg';
