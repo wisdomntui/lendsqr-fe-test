@@ -9,15 +9,15 @@ export const navItems: Array<Object> = [
       },
       {
         text: 'guarantors',
-        icon: 'userFriends',
+        icon: 'usersTrio',
       },
       {
         text: 'loans',
-        icon: 'userFriends',
+        icon: 'moneyBag',
       },
       {
         text: 'decision models',
-        icon: 'userFriends',
+        icon: 'handshake',
       },
     ],
   },

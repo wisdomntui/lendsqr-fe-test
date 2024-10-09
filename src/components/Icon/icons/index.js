@@ -19,3 +19,6 @@ export {ArrowLeft} from './ArrowLeft.svg';
 export {User} from './User.svg';
 export {FilledStar} from './FilledStar.svg';
 export {Star} from './Star.svg';
+export {UsersTrio} from './UsersTrio.svg';
+export {MoneyBag} from './MoneyBag.svg';
+export {Handshake} from './Handshake.svg';
