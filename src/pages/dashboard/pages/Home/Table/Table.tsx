@@ -1,8 +1,16 @@
+import dayjs from 'dayjs';
 import Icon from '../../../../../components/Icon/Icon';
 import Tag from '../../../../../components/Tag/Tag';
 import styles from './Table.module.scss';
+import {capitalize} from 'lodash';
+import {Link} from 'react-router-dom';
 
-const Table = () => {
+interface TableProps {
+  isLoading: boolean;
+  data: any;
+}
+
+const Table = ({isLoading, data}: TableProps) => {
   return (
     <div className={styles.container}>
       <table>
@@ -47,385 +55,36 @@ const Table = () => {
             <th></th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>
-              <Tag text="blacklisted" color="#E4033B" bg="#ffe5ec" />
-            </td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-          <tr>
-            <td>lendsqr</td>
-            <td>adedeji</td>
-            <td>adedeji@lendsqr.com</td>
-            <td>08078903721</td>
-            <td>May 15, 2020 10:00 AM</td>
-            <td>inactive</td>
-            <td>
-              <Icon name="threeDots" />
-            </td>
-          </tr>
-        </tbody>
+        {!isLoading && data.length > 0 && (
+          <tbody>
+            {data.map((user: any) => {
+              return (
+                <tr>
+                  <td>{capitalize(user.orgName)}</td>
+                  <td>
+                    <Link to={`/user/${user.id}`}>
+                      {capitalize(user.userName)}
+                    </Link>
+                  </td>
+                  <td>{user.email}</td>
+                  <td>{user.phoneNumber}</td>
+                  <td>{dayjs(user.createdAt).format('MMM D, YYYY h:mm A')}</td>
+                  <td>
+                    <Tag text="blacklisted" color="#E4033B" bg="#ffe5ec" />
+                  </td>
+                  <td>
+                    <Icon name="threeDots" />
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        )}
       </table>
+      {isLoading && <div className={styles.emptyState}>Loading...</div>}
+      {data.length === 0 && (
+        <div className={styles.emptyState}>There are no users!</div>
+      )}
     </div>
   );
 };

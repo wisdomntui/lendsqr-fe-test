@@ -3,6 +3,7 @@
   padding: 0px 30px 0px 30px;
   height: calc(100vh - 522px);
   overflow: auto;
+  box-shadow: 3px 5px 20px 0px #0000000a;
 
   & > table {
     width: 100%;
@@ -28,6 +29,11 @@
       & > tr > td {
         padding: 21px 0px 23px 0px;
         border-bottom: 1px solid #213f7d1a;
+
+        & > a {
+          color: #545f7d;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -86,4 +92,11 @@
     background-color: #213f7d1a;
     justify-content: center;
   }
+}
+
+.emptyState {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

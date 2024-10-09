@@ -1,9 +1,20 @@
+import {useEffect, useState} from 'react';
+import {useUsersQuery} from '../../../../api/queries/user.query';
 import styles from './Home.module.scss';
 import StatsCard from './StatsCard/StatsCard';
 import Paginator from './Table/Paginator';
 import Table from './Table/Table';
 
 const Home = () => {
+  const {isLoading, data} = useUsersQuery();
+  const [userData, setUserData] = useState([]);
+
+  useEffect(() => {
+    if (data) {
+      setUserData(data);
+    }
+  }, [data]);
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.header}>Users</div>
@@ -30,7 +41,7 @@ const Home = () => {
         />
       </div>
 
-      <Table />
+      <Table isLoading={isLoading} data={userData} />
 
       <Paginator />
     </div>
