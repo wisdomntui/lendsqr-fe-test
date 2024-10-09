@@ -3,6 +3,7 @@ import AuthLayout from './pages/auth/AuthLayout/AuthLayout';
 import Login from './pages/auth/Login/Login';
 import Layout from './pages/dashboard/Layout/Layout';
 import Home from './pages/dashboard/pages/Home/Home';
+import UserDetails from './pages/dashboard/pages/UserDetails/UserDetails';
 
 export const router = createBrowserRouter([
   // Auth pages
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: '/user/:id',
+        element: <UserDetails />,
       },
     ],
   },

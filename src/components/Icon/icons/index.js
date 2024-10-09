@@ -15,3 +15,4 @@ export {Filter} from './Filter.svg';
 export {ThreeDots} from './ThreeDots.svg';
 export {CaretLeftSlim} from './CaretLeftSlim.svg';
 export {CaretRightSlim} from './CaretRightSlim.svg';
+export {ArrowLeft} from './ArrowLeft.svg';
