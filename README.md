@@ -1,50 +1,51 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+## Lendsqr FE Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React with TypeScript implementation that serves as an MVP for a lending service.
 
-## Available Scripts
+## Tech Stack 🔥
 
-In the project directory, you can run:
+- ReactJS
+- SCSS
+- TypeScript
 
-### `npm start`
+## Table of Contents 📖
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Pages](#pages)
+- [Getting Started](#getting-started)
+- [Dependencies](#dependencies)
+- [Deployment](#deployment)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Pages 💡
 
-### `npm test`
+1.  User Login Page
+2.  User List Page: Displays the list of users in the system
+3.  User Details Page: Displays the details for a single user
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started 🏎️
 
-### `npm run build`
+Follow these steps to get started:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  Clone the repository: `git clone` [`https://github.com/wisdomntui/lendsqr-fe-test`](https://github.com/wisdomntui/lendsqr-fe-test)
+2.  Install the project dependencies: `npm install`
+3.  Start the application in development mode with `npm run dev`, and build the application for production using `npm run build`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🚨Make sure you have **NodeJS** and **Typescript** installed before following the above-listed steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
 
-### `npm run eject`
+The dependencies listed here are the major dependencies used in the application. To see a full list of all the dependencies (including derv dependencies) take a look at the [package.json](https://github.com/wisdomntui/lendsqr-fe-test/blob/main/package.json) file.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Module                                                | Use                                                                                                                               | Version                                                                                                                                                                                                                       |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`vite`](https://vitejs.dev/)                         | Local development and bundling                                                                                                    | 5.4.8                                                                                                                                                                                                                         |
+| [`react`](https://react.dev)                          | The main library of the application                                                                                               | 18.3.1                                                                                                                                                                                                                        |
+| [`typescript`](https://www.typescriptlang.org/)       | The language used in the application                                                                                              | 4.9.5                                                                                                                                                                                                                         |
+| [`axios`](https://axios-http.com)                     | Making requests to the API                                                                                                        | 1.7.7                                                                                                                                                                                                                         |
+| [`react-query`](https://tanstack.com/query)           | Fetching, caching, synchronizing, and updating server state                                                                       | 5.59.0                                                                                                                                                                                                                        |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## **Deployment**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The Application has been deployed to Render and is accessible at the following URL:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-=======
-# lendsqr-fe-test
->>>>>>> 7b71c69 (Initial commit)
+**[https://wisdom-lendsqr-fe-test.onrender.com](https://wisdom-lendsqr-fe-test.onrender.com)**
