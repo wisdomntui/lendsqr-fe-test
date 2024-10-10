@@ -30,8 +30,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview",
-    "start": "vite preview"
+    "preview": "vite preview --host",
+    "start": "vite preview --host"
   },
   "eslintConfig": {
     "extends": [
